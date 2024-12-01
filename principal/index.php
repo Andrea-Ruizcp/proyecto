@@ -6,5 +6,7 @@
     <title>Document</title>
 </head>
 <body>
+    <h1>Principal</h1>
+    <a href="index.php?pagina=principal">Principal</a>
 </body>
 </html>
