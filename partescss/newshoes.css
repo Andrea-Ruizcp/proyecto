@@ -1,0 +1,128 @@
+/*slider-novedades */
+#slider-news {
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+#slider-news .slider-content {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+#slider-news .new {
+    min-width: 300px; 
+    flex-shrink: 0;
+    text-align: center;
+    margin: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+#slider-news .slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: #A437A6;
+    color: white;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    padding: 10px;
+    z-index: 10;
+}
+
+#prev-btn {
+    left: 10px;
+}
+
+#next-btn {
+    right: 10px;
+}
+
+/*Novedades*/
+.news{
+    padding: 30px 0;
+    text-align: left;
+}
+
+.titulo-news {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 55px;
+    font-weight: 200;
+    color: #000;
+}
+
+.new-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.new{
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    height: 280px;
+    border-radius: 1px;
+    cursor: pointer;;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 10px;
+}
+
+.new img{
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+
+}
+
+.new h3{
+    font-size: 18px;
+    color: #000;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.new p, descripcion{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.new p, color{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.new p, precio{
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.precio{
+    font-weight: 800px;
+}
+
+.btn-2{
+   display: inline-block; 
+   padding: 5px 10px;
+   background-color: #A437A6;
+   color: white;
+   border-radius: 5px; 
+   font-size: 15px;
+   text-decoration: none;
+}
+ 
+ .btn-2:hover{
+     border-radius: 20px;
+     background-color:#A437A6;
+ }
+
+ 
