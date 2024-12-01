@@ -1,0 +1,17 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed' sans-serif;
+    background-color: #FFFFFF;
+}
+ 
+.content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+ 
+.contenedores{
+    margin-top: 50px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
