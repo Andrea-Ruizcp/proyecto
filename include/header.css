@@ -97,4 +97,6 @@ body{
     border: none;
     cursor: pointer;
     margin-left: 1rem;
+    color: #000;
+    font-size: 20px;
 }
