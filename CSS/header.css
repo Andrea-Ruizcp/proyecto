@@ -1,0 +1,100 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.header{
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+    height: 5rem;
+}
+
+.header-content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100%;
+}
+
+.logo-nav{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.logo img{
+    width: 95px;
+    height: 75px;
+    margin-right: 5rem;
+}
+
+.nav{
+    display: flex;
+    align-items: center;
+}
+
+.nav a{
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: 000;
+    text-decoration: none;
+    margin-right: 1rem;
+    color: #000;
+}
+
+.nav a:hover{
+    color: #6178ff;
+}
+
+.nav span{
+    color: #000;
+    margin-right: 1rem;
+}
+
+.search-bar{
+    flex: 1;
+    max-width: 36rem;
+    margin: 0 2rem;
+    position: relative;
+}
+
+.search-bar input{
+    width: 100%;
+    padding: 0.5rem 1rem;
+    padding-right: 2.5rem;
+    border: 1px solid #000;
+    border-radius: 0;
+}
+
+.search-icon{
+    position: absolute;
+    right: 0.75rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1rem;
+    height: 1rem;
+    color: #000;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+}
+
+.icons i{
+    padding: 0.5rem;
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin-left: 1rem;
+}

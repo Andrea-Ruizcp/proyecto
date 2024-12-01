@@ -11,35 +11,28 @@
     <link rel="shortcut icon" href="/image/logo.png" type="image/x-icon">
 </head>
 <body>
-    <!--Barra de navegación-->
-    <header class="header">
-        <div class="container">
-            <div class="header-content">
-                <div class="logo-nav">
-                    <a href="#" class="logo">
-                        <img src="/image/logo.png">
-                    </a>
-                    <nav class="nav">
-                        <a href="#">News</a>
-                        <span>|</span>
-                        <a href="#">Men</a>
-                        <span>|</span>
-                        <a href="#">Women</a>
-                        <span>|</span>
-                        <a href="#">Kids</a>
-                    </nav>
-                </div>
-                <div class="search-bar">
-                    <input type="text" placeholder="Buscar...">
-                    <i class="search-icon fa-solid fa-magnifying-glass"></i>
-                </div>
-                <div class="icons">
-                    <a href="#"><i class="fa-solid fa-cart-shopping"></i></i></a>
-                    <a href="#"><i class="fa-regular fa-user"></i></a>
-                </div>    
-            </div>
+    <!--Carrousel-->
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="/image/black.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/image/black2.png" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="/image/black3.png" class="d-block w-100" alt="...">
+          </div>
         </div>
-    </header>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
