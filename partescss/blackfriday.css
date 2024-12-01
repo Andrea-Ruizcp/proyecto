@@ -1,0 +1,73 @@
+/*Productos*/
+.productos {
+    padding: 30px 0;
+    text-align: left;
+}
+
+.titulo-productos {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: "Roboto Condensed", sans-serif;
+    font-size: 55px;
+    font-weight: 200;
+    color: #000;
+}
+
+.producto-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+
+.producto {
+    text-align: center;
+    padding: 10px;
+    width: 300px;
+    height: 280px;
+    border-radius: 1px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    margin-top: 10px;
+}
+
+.producto img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.producto h3 {
+    font-size: 18px;
+    color: #000;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-bottom: 10px;
+    font-weight: 300;
+}
+
+.producto p, .precio {
+    font-size: 18px;
+    color: #000;
+    margin-bottom: 15px;
+}
+
+.precio {
+    font-weight: 800px;
+}
+
+.btn-2 {
+   display: inline-block; 
+   padding: 7px 15px;
+   background-color: #A437A6;
+   color: white;
+   border-radius: 5px; 
+   font-size: 15px;
+   text-decoration: none;
+}
+ 
+.btn-2:hover {
+     border-radius: 20px;
+     background-color:#A437A6;
+}
+
