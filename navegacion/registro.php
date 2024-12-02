@@ -22,7 +22,7 @@ include("../include/header.php");
 
 <div class="content">
         <div class="contenedores bg-white p-5 text-secondary">
-            <div class="text-center fs-2 fw-light">Registrarse</div>
+            <div class=" texto text-center fs-2 fw-light">Registrarse</div>
             <div class="d-flex gap-1 justify-content-center mt-4">
                 <div>¿Ya tienes una cuenta?</div>
                 <a href="http://localhost/comercio/proyecto/navegacion/login.php" class="text-decoration-none fw-semibold" style="color: #ffdc41;">Inicia sesión</a>
