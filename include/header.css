@@ -50,6 +50,7 @@ body{
     text-decoration: none;
     margin-right: 1rem;
     color: #000;
+    font-family: 'Poppins', sans-serif;
 }
 
 .nav a:hover{
