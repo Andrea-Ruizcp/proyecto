@@ -1,0 +1,17 @@
+.product-image {
+    max-width: 80px;
+    height: auto;
+}
+ 
+.carrito {
+    margin-top: 100px;
+}
+ 
+.img {
+    width: 100px;
+    height: 100px;
+}
+ 
+.card {
+    border: none !important;
+}
