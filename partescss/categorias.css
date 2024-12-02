@@ -1,0 +1,109 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+ 
+/*Imagen*/
+.image {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+ 
+.imagen {
+    width: 100%;
+    height: 450px;
+    border: 2px solid #ccc;
+}
+ 
+/*por deporte*/
+.deporte-content{
+    display: flex;
+    justify-content: space-between;
+    gap: 2px;
+}
+
+.image-box{
+    text-align: center;
+}
+
+.imagenes-box img{
+    width: 250px;
+    height: 350px;
+}
+/*Productos*/
+.products{
+    padding: 30px 0;
+    text-align: left;
+}
+ 
+.product-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 15px;
+}
+ 
+.product{
+    text-align: center;
+    padding: 10px;
+    width: 250px;
+    height: 340px;
+    border-radius: 1px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
+}
+ 
+.product img{
+    width: 230px;
+    height: 150px;
+}
+ 
+.product h3{
+    font-size: 17px;
+    color: #000;
+    font-family: "Roboto Condensed", sans-serif;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-weight: 300;
+}
+ 
+ 
+.product p, descripcion{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+ 
+.product p, color{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+ 
+.product p, precio{
+    font-size: 16px;
+    color: #000;
+    margin-bottom: 5px;
+}
+ 
+.precio{
+    font-weight: 800px;
+}
+ 
+.btn-2{
+    display: inline-block;
+    padding: 7px 15px;
+    background-color: #000;
+    color: white;
+    border-radius: 5px;
+    font-size: 15px;
+    text-decoration: none;
+    font-weight: 600;
+}
+ 
+ .btn-2:hover{
+     border-radius: 20px;
+     background-color:#000;
+ }

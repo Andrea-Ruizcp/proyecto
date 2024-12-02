@@ -1,12 +1,26 @@
+<?php
+ 
+include("../conexion/conexion.php");
+ 
+include("../include/header.php");
+ 
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Zapped Shoes</title>
 </head>
 <body>
-    <h1>Principal</h1>
-    <a href="index.php?pagina=principal">Principal</a>
+ 
+    <?php include("../partes/carrousel.php");?>
+    <?php include("../partes/blackfriday.php");?>
+    <?php include("../partes/newshoes.php");?>
+    <?php include("../partes/promo.php");?>
+    <?php include("../partes/brands.php");?>
+ 
+ 
+    <?php include("../include/footer.php");?>
 </body>
 </html>
