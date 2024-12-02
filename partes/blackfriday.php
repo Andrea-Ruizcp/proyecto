@@ -25,7 +25,7 @@
                         <p class="color">Color</p>
                         <p class="precio">$</p>
                         <div>
-                            <a href="http://localhost/comercio/proyecto/navegacion/vista.php" class="btn-2">Comprar ahora</a>
+                            <a href="http://localhost/comercio/proyecto/navegacion/vistap.php" class="btn-2">Comprar ahora</a>
                         </div>
                     </div>
             </div>
