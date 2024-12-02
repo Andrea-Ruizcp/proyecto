@@ -61,7 +61,7 @@
                 </div>
                 
             </div>   
-            <!-- Botones de navegación -->
+           
             <button id="prev-btn" class="slider-btn"><i class="fa-solid fa-chevron-left"></i></button>
             <button id="next-btn" class="slider-btn"><i class="fa-solid fa-chevron-right"></i></button>
         </div>
