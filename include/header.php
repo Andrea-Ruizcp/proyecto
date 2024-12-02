@@ -11,7 +11,6 @@
     <link rel="shortcut icon" href="http://localhost/comercio/proyecto/image/logo.png" type="image/x-icon">
 </head>
 <body>
-    <!--Barra de navegación-->
     <header class="header">
         <div class="contenedor container">
             <div class="header-content">
