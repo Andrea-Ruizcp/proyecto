@@ -25,7 +25,7 @@ include("../include/header.php");
         <div class="row" style="margin-top: 10%">
             <!-- Sección de Productos -->
             <div class="col-lg-8">
-                <div class="card shadow-sm mb-4">
+                <div class="card mb-4">
                     <div class="card-body mt-3">
                                 <div class="row mb-4 align-items-center">
                                     <div class="col-md-2 col-4">
