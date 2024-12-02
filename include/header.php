@@ -16,7 +16,7 @@
         <div class="contenedor container">
             <div class="header-content">
                 <div class="logo-nav">
-                    <a href="#" class="logo">
+                    <a href="http://localhost/comercio/proyecto/principal/" class="logo">
                         <img src="http://localhost/comercio/proyecto/image/logo.png">
                     </a>
                     <nav class="nav">
