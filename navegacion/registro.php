@@ -50,7 +50,7 @@ include("../include/header.php");
                 <input class="form-control bg-white" type="email" placeholder="Correo electrónico" name="correo"/>
             </div>
             <div class="input-group mt-3">
-                <input class="form-control bg-white" type="password" placeholder="Contraseña" name="contrasena"/>
+                <input class="form-control bg-white" type="password" placeholder="Contraseña" name="contraseña"/>
             </div>
            
             <div class="btn text-white w-100 mt-4 fw-semibold shadow-sm" style="background-color: #ffdc41;">
