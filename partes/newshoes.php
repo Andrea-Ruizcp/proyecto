@@ -1,3 +1,11 @@
+<?php
+
+include('../conexion/conexion.php');
+
+$consulta = "SELECT * FROM producto WHERE categoria_idcategoria = '2';";
+$resultado = mysqli_query($conexion, $consulta);
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,49 +27,19 @@
         <!-- Slider de novedades -->
         <div id="slider-news" class="slider-custom">
             <div class="slider-content">
+                <?php while ($fila = mysqli_fetch_array($resultado)) : ?>
                 <div class="new">
-                    <img src="" alt="">  
-                    <h3>Nombre</h3>
-                    <p class="descripcion">Descripción</p>
-                    <p class="color">Color</p>
-                    <p class="precio">$</p>
+                    <img src="http://localhost/comercio/proyecto/image/principal/black/<?php echo htmlspecialchars($fila['imagen']); ?> " alt="">
+                    <h3><?php echo htmlspecialchars($fila['nombre']); ?></h3>
+                    <p class="descripcion"><?php echo htmlspecialchars($fila['descripcion']); ?></p>
+                    <p class="color">Color:<?php echo htmlspecialchars($fila['color']); ?></p>
+                    <p class="precio">$<?php echo htmlspecialchars(number_format($fila['precio'], 0, ',')); ?></p>
                     <div>
                         <a href="#" class="btn-2">Comprar ahora</a>
                     </div>
-                </div>
-                <div class="new">
-                    <img src="" alt="">  
-                    <h3>Nombre</h3>
-                    <p class="descripcion">Descripción</p>
-                    <p class="color">Color</p>
-                    <p class="precio">$</p>
-                    <div>
-                        <a href="#" class="btn-2">Comprar ahora</a>
-                    </div>
-                </div>
-                <div class="new">
-                    <img src="" alt="">  
-                    <h3>Nombre</h3>
-                    <p class="descripcion">Descripción</p>
-                    <p class="color">Color</p>
-                    <p class="precio">$</p>
-                    <div>
-                        <a href="#" class="btn-2">Comprar ahora</a>
-                    </div>
-                </div>
-                <div class="new">
-                    <img src="" alt="">  
-                    <h3>Nombre</h3>
-                    <p class="descripcion">Descripción</p>
-                    <p class="color">Color</p>
-                    <p class="precio">$</p>
-                    <div>
-                        <a href="#" class="btn-2">Comprar ahora</a>
-                    </div>
-                </div>
-                
-            </div>   
-           
+                </div>  
+                <?php endwhile; ?>          
+            </div>           
             <button id="prev-btn" class="slider-btn"><i class="fa-solid fa-chevron-left"></i></button>
             <button id="next-btn" class="slider-btn"><i class="fa-solid fa-chevron-right"></i></button>
         </div>

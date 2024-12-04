@@ -26,7 +26,6 @@ include("../include/header.php");
             </div>
             <div class="container-info-product mt-5">
                 <h1 class="title-product">Name</h1>
-                <h6 class="category-product">Category</h6>
                 <div class="container-price">
                     <span>$95.00</span>
                     <i class="fa-solid fa-angle-right"></i>

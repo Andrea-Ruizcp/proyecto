@@ -1,3 +1,12 @@
+<?php
+
+include('../conexion/conexion.php');
+
+$consulta = "SELECT * FROM producto WHERE categoria_idcategoria = '1';";
+$resultado = mysqli_query($conexion, $consulta);
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -18,19 +27,21 @@
               BLACK FRIDAY 60% OFF
         </h2>
             <div class="producto-content">
+            <?php while ($fila = mysqli_fetch_array($resultado)) : ?>    
                     <div class="producto">
-                        <img src="" alt="">  
-                        <h3>Nombre</h3>
-                        <p class="descripcion">Descripcion</p>
-                        <p class="color">Color</p>
-                        <p class="precio">$</p>
+                        <img src="http://localhost/comercio/proyecto/image/principal/black/<?php echo htmlspecialchars($fila['imagen']); ?> " alt=""> 
+                        <h3><?php echo htmlspecialchars($fila['nombre']); ?></h3>
+                        <p class="descripcion"><?php echo htmlspecialchars($fila['descripcion']); ?></p>
+                        <p class="color">Color:<?php echo htmlspecialchars($fila['color']); ?></p>
+                        <p class="precio">$<?php echo htmlspecialchars(number_format($fila['precio'], 0, ',')); ?></p>
                         <div>
                             <a href="http://localhost/comercio/proyecto/navegacion/vistap.php" class="btn-2">Comprar ahora</a>
                         </div>
                     </div>
+            <?php endwhile; ?>        
             </div>
     </main>
     
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
-</html>
+</html>   

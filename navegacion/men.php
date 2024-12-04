@@ -4,6 +4,9 @@ include("../conexion/conexion.php");
 
 include("../include/header.php");
 
+$consulta = "SELECT * FROM producto WHERE categoria_idcategoria = '5';";
+$resultado = mysqli_query($conexion, $consulta);
+
 ?>
 
 <!DOCTYPE html>
@@ -53,16 +56,18 @@ include("../include/header.php");
         <h2 class="texto mb-0">MEN'S NEW ARRIVALS</h2>
      </div>
       <div class="product-content mt-3">
+      <?php while ($fila = mysqli_fetch_array($resultado)) : ?>    
             <div class="product">
-            <img src="" alt="">  
-                    <h3>Nombre</h3>
-                    <p class="descripcion">Descripción</p>
-                    <p class="color">Color</p>
-                    <p class="precio">$</p>
+            <img src="http://localhost/comercio/proyecto/image/principal/black/<?php echo htmlspecialchars($fila['imagen']); ?> " alt=""> 
+                    <h3><?php echo htmlspecialchars($fila['nombre']); ?></h3>
+                    <p class="descripcion"><?php echo htmlspecialchars($fila['descripcion']); ?></p>
+                    <p class="color">Color:<?php echo htmlspecialchars($fila['color']); ?></p>
+                    <p class="precio">$<?php echo htmlspecialchars(number_format($fila['precio'], 0, ',')); ?></p>
                     <div>
                         <a href="#" class="btn-2">Comprar ahora</a>
                     </div>
                 </div>
+                <?php endwhile; ?>   
       </div>
      </main> 
 
