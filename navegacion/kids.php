@@ -24,9 +24,9 @@ $resultado = mysqli_query($conexion, $consulta);
 <body>
     <!--Imagen--> 
     <div class="image container mt-3">
-        <img src="http://localhost/comercio/proyecto/image/black.png" alt="imagen" class="imagen">
-    </div>   
-
+        <img src="http://localhost/comercio/proyecto/image/kids1.png" alt="imagen" class="imagen">
+    </div>
+  
     <!--Por deporte-->
     <div class="deporte container mt-5">
         <div class="mt-3">

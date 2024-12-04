@@ -22,11 +22,11 @@ $resultado = mysqli_query($conexion, $consulta);
     <link rel="shortcut icon" href="http://localhost/comercio/proyecto/image/logo.png" type="image/x-icon">
 </head>
 <body>
-    <!--Imagen--> 
-    <div class="image container mt-3">
-        <img src="http://localhost/comercio/proyecto/image/black.png" alt="imagen" class="imagen">
-    </div>   
-
+   <!--Imagen-->
+   <div class="image container mt-3">
+        <img src="http://localhost/comercio/proyecto/image/women1.png" alt="imagen" class="imagen">
+    </div>  
+ 
     <!--Por deporte-->
     <div class="deporte container mt-5">
         <div class="mt-3">
@@ -34,19 +34,19 @@ $resultado = mysqli_query($conexion, $consulta);
         </div>
         <div class="deporte-content">
             <div class="imagenes-box">
-                <img src="http://localhost/comercio/proyecto/image/black.png" alt="imagen">
+                <img src="http://localhost/comercio/proyecto/image/sport1.png" alt="imagen">
             </div>
             <div class="imagenes-box">
-                <img src="http://localhost/comercio/proyecto/image/black.png" alt="imagen">
+                <img src="http://localhost/comercio/proyecto/image/sport2.png" alt="imagen">
             </div>
             <div class="imagenes-box">
-                <img src="http://localhost/comercio/proyecto/image/black.png" alt="imagen">
+                <img src="http://localhost/comercio/proyecto/image/sport3.png" alt="imagen">
             </div>
             <div class="imagenes-box">
-                <img src="http://localhost/comercio/proyecto/image/black.png" alt="imagen">
+                <img src="http://localhost/comercio/proyecto/image/sport4.png" alt="imagen">
             </div>
             <div class="imagenes-box">
-                <img src="http://localhost/comercio/proyecto/image/black.png" alt="imagen">
+                <img src="http://localhost/comercio/proyecto/image/sport5.png" alt="imagen">
             </div>
         </div>
     </div>
