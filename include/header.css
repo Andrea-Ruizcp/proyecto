@@ -101,3 +101,51 @@ body{
     color: #000;
     font-size: 20px;
 }
+
+@media (max-width: 768px) {
+    .contenedor {
+        padding: 0.5rem 1rem;
+        height: auto;
+    }
+ 
+    .header-content {
+        flex-direction: column;
+    }
+ 
+    .logo img {
+        width: 80px;
+        height: 65px;
+        margin-right: 1rem;
+    }
+ 
+    .nav {
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+ 
+    .search-bar {
+        max-width: 100%;
+        margin: 1rem 0;
+    }
+ 
+    .search-bar input {
+        padding: 0.4rem;
+    }
+}
+ 
+@media (max-width: 480px) {
+    .nav a {
+        font-size: 0.8rem;
+        margin-right: 0.5rem;
+    }
+ 
+    .icons i {
+        font-size: 18px;
+    }
+ 
+    .logo img {
+        width: 70px;
+        height: 55px;
+    }
+}
+ 

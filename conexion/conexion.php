@@ -1,13 +1,13 @@
 <?php
-
-$conexion = mysqli_connect("localhost", "root", "", "zapped");
-/*
-if (!$conexion) {
-    echo "Error en la conexión";
+$host = 'localhost';
+$db = 'zapped';
+$user = 'root';
+$password = '';
+ 
+try {
+    $pdo = new PDO("mysql:host=$host;dbname=$db", $user, $password);
+    $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+} catch (PDOException $e) {
+    die("Error en la conexión: " . $e->getMessage());
 }
-else {
-    echo "Conexión exitosa";
-}
-
-*/
 ?>

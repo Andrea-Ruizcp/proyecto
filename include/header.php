@@ -11,7 +11,7 @@
     <link rel="shortcut icon" href="http://localhost/comercio/proyecto/image/logo.png" type="image/x-icon">
 </head>
 <body>
-    <header class="header">
+<header class="header">
         <div class="contenedor container">
             <div class="header-content">
                 <div class="logo-nav">
@@ -35,6 +35,7 @@
                 <div class="icons">
                     <a href="http://localhost/comercio/proyecto/navegacion/carrito.php"><i class="fa-solid fa-cart-shopping"></i></i></a>
                     <a href="http://localhost/comercio/proyecto/navegacion/login.php"><i class="fa-regular fa-user"></i></a>
+                    <a href="../funciones/logout.php"><i class="fa-solid fa-power-off"></i></a>
                 </div>    
             </div>
         </div>

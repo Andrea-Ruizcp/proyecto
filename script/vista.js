@@ -44,3 +44,4 @@ toggleAdditionalInformation.addEventListener('click', () => {
 toggleReviews.addEventListener('click', () => {
     contentReviews.classList.toggle('hidden');
 });
+ 

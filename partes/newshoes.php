@@ -1,10 +1,10 @@
 <?php
-
-include('../conexion/conexion.php');
-
-$consulta = "SELECT * FROM producto WHERE categoria_idcategoria = '2';";
-$resultado = mysqli_query($conexion, $consulta);
-
+ 
+include("../conexion/conexion.php");
+ 
+$consulta = "SELECT * FROM `productos` WHERE categoria = 'newshoes'";
+$resultado = $pdo->query($consulta);
+ 
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -27,19 +27,18 @@ $resultado = mysqli_query($conexion, $consulta);
         <!-- Slider de novedades -->
         <div id="slider-news" class="slider-custom">
             <div class="slider-content">
-                <?php while ($fila = mysqli_fetch_array($resultado)) : ?>
+            <?php while ($producto = $resultado->fetch()) { ?>
                 <div class="new">
-                    <img src="http://localhost/comercio/proyecto/image/principal/black/<?php echo htmlspecialchars($fila['imagen']); ?> " alt="">
-                    <h3><?php echo htmlspecialchars($fila['nombre']); ?></h3>
-                    <p class="descripcion"><?php echo htmlspecialchars($fila['descripcion']); ?></p>
-                    <p class="color">Color:<?php echo htmlspecialchars($fila['color']); ?></p>
-                    <p class="precio">$<?php echo htmlspecialchars(number_format($fila['precio'], 0, ',')); ?></p>
+                    <img src="../image/<?= htmlspecialchars($producto['imagen']) ?>" alt="">  
+                    <h3><?= htmlspecialchars($producto['nombre']) ?></h3>
+                    <p class="precio">$<?= htmlspecialchars($producto['precio']) ?></p>
                     <div>
-                        <a href="#" class="btn-2">Comprar ahora</a>
+                        <a href="../navegacion/vistap.php?id=<?= $producto['id'] ?>" class="btn-2">Comprar ahora</a>
                     </div>
-                </div>  
-                <?php endwhile; ?>          
-            </div>           
+                </div>
+            <?php } ?>
+            </div>  
+           
             <button id="prev-btn" class="slider-btn"><i class="fa-solid fa-chevron-left"></i></button>
             <button id="next-btn" class="slider-btn"><i class="fa-solid fa-chevron-right"></i></button>
         </div>

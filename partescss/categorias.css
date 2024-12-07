@@ -13,22 +13,35 @@ body{
 }
  
 .imagen {
-    width: 100%;
-    height: 450px;
-    border: 2px solid #ccc;
+    width: 1200px;
+    height: 500px;
 }
  
 /*por deporte*/
+.slider img {
+    width: 100px;
+    height: 400px;
+    padding: 10px;
+}
+ 
+.slick-dots li button:before {
+    color: #000;
+}
+ 
+.slick-prev:before, .slick-next:before {
+    color: #000;
+}
+ 
 .deporte-content{
     display: flex;
     justify-content: space-between;
-    gap: 2px;
+    gap: 10px;
 }
-
+ 
 .image-box{
     text-align: center;
 }
-
+ 
 .imagenes-box img{
     width: 250px;
     height: 350px;
@@ -40,6 +53,7 @@ body{
     font-weight: 500;
     color: #000;
 }
+ 
 .products{
     padding: 30px 0;
     text-align: left;
@@ -54,15 +68,15 @@ body{
 .product{
     text-align: center;
     padding: 10px;
-    width: 300px;
-    height: 340px;
+    width: 250px;
+    height: 300px;
     border-radius: 1px;
     cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 5px 0px, rgba(0, 0, 0, 0.1) 0px 0px 1px 0px;
 }
  
 .product img{
-    width: 180px;
+    width: 150px;
     height: 150px;
 }
  
@@ -71,23 +85,7 @@ body{
     color: #000;
     font-family: 'Montserrat', sans-serif;
     margin-top: 10px;
-    margin-bottom: 5px;
     font-weight: 300;
-}
- 
- 
-.product p, descripcion{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 5px;
-}
- 
-.product p, color{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 16px;
-    color: #000;
-    margin-bottom: 5px;
 }
  
 .product p, precio{
@@ -104,17 +102,43 @@ body{
 .btn-2{
     display: inline-block;
     padding: 7px 15px;
-    background-color: white;
-    color: black;
+    background-color: #ffffff;
+    color: #000;
     border-radius: 5px;
     font-size: 15px;
     text-decoration: none;
     font-weight: 600;
     font-family: 'Montserrat', sans-serif;
     border: 2px solid #000;
+    margin-top: 10px;
 }
  
  .btn-2:hover{
      border-radius: 20px;
-     background-color: white;
+     background-color:#ffffff;
  }
+ 
+ @media (max-width: 768px) {
+    .imagen {
+        width: 100%;
+        height: 300px;
+    }
+ 
+    .deporte-content {
+        flex-direction: column;
+        justify-items: center;
+        align-items: center;
+        gap: 10px;
+    }
+ 
+    .product-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+ 
+@media (max-width: 576px) {
+    .product-content {
+        grid-template-columns: 1fr;
+    }
+}
+ 
